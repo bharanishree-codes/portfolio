@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharani Shree R | Python Developer & API Architect</title>
+    <meta name="description" content="Portfolio of Bharani Shree R, Python Developer specializing in FastAPI, Django, database optimization, and AI tool integrations using Model Context Protocol (MCP).">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Bharani Shree R | Python Developer Portfolio">
+    <meta property="og:description" content="Explore my projects in FastAPI, Django, automated workflows, and AI Model Context Protocol integrations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/bharanishree-codes">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body class="dark-theme">
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header class="header sticky-nav">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                    Bharani <span class="logo-accent">Shree</span>
+                </a>
+            
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle light/dark theme">
+                    <i class="fa-solid fa-sun icon-sun"></i>
+                    <i class="fa-solid fa-moon icon-moon"></i>
+                </button>
+                <div class="menu-toggle" id="mobile-menu-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-menu">
+        <nav class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#experience" class="mobile-nav-link">Experience</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Abstract Glowing Background Orbs -->
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="pulse-dot"></span> Available for Opportunities
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="text-gradient">Bharani Shree</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Python Developer & <span id="typewriter"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Building robust backends, scalable RESTful APIs, and intelligent AI tool configurations. Specialized in FastAPI, Django, database optimizations, and Model Context Protocol (MCP) integrations.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="assets/resume.pdf" download="Bharani_Shree_R_Resume.pdf" class="btn btn-tertiary">
+                        <i class="fa-solid fa-download"></i> Get Resume
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/bharanishree-codes" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/bharanishree" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:bharanishree2002.08@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="tech-stack-sphere">
+                    <!-- Dynamic CSS rotating rings and tech icons -->
+                    <div class="ring ring-1"></div>
+                    <div class="ring ring-2"></div>
+                    <div class="ring ring-3"></div>
+                    <!-- <div class="sphere-center">
+                        <i class="fa-brands fa-python python-logo"></i>
+                    </div> -->
+                    <div class="sphere-center">
+                        <img src="assets/bharani.jpeg" alt="Bharani Shree R" class="profile-avatar">
+                    </div>
+                    <span class="floating-tech tech-fastapi" title="FastAPI">FastAPI</span>
+                    <span class="floating-tech tech-django" title="Django">Django</span>
+                    <span class="floating-tech tech-docker" title="Docker">Docker</span>
+                    <span class="floating-tech tech-redis" title="Redis">Redis</span>
+                    <span class="floating-tech tech-postgres" title="PostgreSQL">Postgres</span>
+                    <span class="floating-tech tech-mcp" title="Model Context Protocol">MCP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Bridging AI & Backend Architecture</h2>
+                <div class="section-underline"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead-text">
+                        I am a Python Developer with a passion for designing and deploying production-grade, highly secure RESTful APIs. With over 2 years of professional experience, my core focus lies in performance optimization, asynchronous workflows, and building clean, modular architectures.
+                    </p>
+                    <p>
+                        Lately, I've been diving deep into the intersection of backend engineering and Artificial Intelligence. I design and implement standard interfaces using the <strong>Model Context Protocol (MCP)</strong>, enabling LLMs to safely discover and query internal database structures and APIs.
+                    </p>
+                    <div class="key-strengths">
+                        <div class="strength-card">
+                            <div class="strength-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div>
+                                <h4>API Security & RBAC</h4>
+                                <p>Enforcing strict JWT/OAuth2 and granular Role-Based Access Controls to protect sensitive enterprise systems.</p>
+                            </div>
+                        </div>
+                        <div class="strength-card">
+                            <div class="strength-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                            <div>
+                                <h4>Performance Tuning</h4>
+                                <p>Optimizing relational schemas, implementing smart query indexing, and asynchronous background tasks via Celery & Redis.</p>
+                            </div>
+                        </div>
+                        <div class="strength-card">
+                            <div class="strength-icon"><i class="fa-solid fa-robot"></i></div>
+                            <div>
+                                <h4>AI Integration (MCP)</h4>
+                                <p>Creating seamless tool definitions and API integration maps so LLMs can execute backend endpoints dynamically.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-stats-panel">
+                    <div class="stat-box">
+                        <span class="stat-number" data-target="2">2+</span>
+                        <span class="stat-label">Years of Experience</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number" data-target="30">30%</span>
+                        <span class="stat-label">Query Optimizations</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number" data-target="80">80%</span>
+                        <span class="stat-label">Faster Data Processing</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number" data-target="4">4</span>
+                        <span class="stat-label">Production Platforms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills Matrix</span>
+                <h2 class="section-title">My Tech Stack & Expertise</h2>
+                <div class="section-underline"></div>
+            </div>
+            
+            <div class="skills-container">
+                <!-- Tab Controls -->
+                <div class="skills-tabs">
+                    <button class="skills-tab-btn active" data-tab="backend">Backend & Frameworks</button>
+                    <button class="skills-tab-btn" data-tab="languages">Languages & DBs</button>
+                    <button class="skills-tab-btn" data-tab="devops">DevOps & Tools</button>
+                    <button class="skills-tab-btn" data-tab="methodologies">Best Practices</button>
+                </div>
+                
+                <!-- Tab Panels -->
+                <div class="skills-panels">
+                    <!-- Backend & Frameworks -->
+                    <div class="skills-panel active" id="backend">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-bolt text-cyan"></i> FastAPI</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-cubes text-blue"></i> Django & DRF</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-leaf text-green"></i> Celery & Redis</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-database text-purple"></i> SQLAlchemy & Pydantic</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-network-wired text-orange"></i> REST APIs & OAuth2</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-brain text-gradient"></i> Model Context Protocol (MCP)</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages & Databases -->
+                    <div class="skills-panel" id="languages">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-python text-blue"></i> Python (Async & OOP)</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-database text-cyan"></i> PostgreSQL & MySQL</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-js text-yellow"></i> JavaScript</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-table text-orange"></i> SQLite & Redis Cache</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-html5 text-orange"></i> HTML5 & CSS3</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-bootstrap text-purple"></i> Bootstrap Layouts</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Tools -->
+                    <div class="skills-panel" id="devops">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-docker text-blue"></i> Docker Containerization</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-github text-white"></i> GitHub Actions (CI/CD)</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-vial text-green"></i> Pytest (Unit & Integration)</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-code text-cyan"></i> VS Code & PyCharm</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-server-dns text-purple"></i> Swagger / OpenAPI Documentation</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-terminal text-green"></i> Git, Postman, DBeaver</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Methodologies & Soft Skills -->
+                    <div class="skills-panel" id="methodologies">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-users text-cyan"></i> Agile & Scrum Methodology</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-magnifying-glass-chart text-orange"></i> Query Tuning & Optimization</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-comments text-green"></i> Technical Documentation</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-bug text-red"></i> Debugging & Issue Resolution</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 92%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-people-arrows text-blue"></i> Collaborative Code Reviews</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-diagram-project text-purple"></i> Modular System Design</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured Work</span>
+                <h2 class="section-title">Production Implementations</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai">AI & MCP</button>
+                <button class="filter-btn" data-filter="backend">Backend & APIs</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                
+                <!-- Project 1: AI-Integrated API -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-card-header">
+                        <div class="project-icons">
+                            <i class="fa-solid fa-robot"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/bharanishree-codes" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">AI-Integrated API Service (MCP)</h3>
+                        <p class="project-tagline">Connecting LLMs with Local Backend Context</p>
+                    </div>
+                    <div class="project-card-body">
+                        <p class="project-problem"><strong>Problem Solved:</strong> LLMs generally lack direct, real-time access to database resources and internal system tools without custom API integrations.</p>
+                        <p class="project-desc">Built a FastAPI middleware wrapping a Model Context Protocol (MCP) server, allowing Claude and other models to query backend schemas and data in real time via natural language commands.</p>
+                        <div class="project-tech">
+                            <span>FastAPI</span>
+                            <span>MCP</span>
+                            <span>Claude</span>
+                            <span>REST API</span>
+                            <span>JSON Schema</span>
+                        </div>
+                        <div class="project-achievements">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Configured tool definitions and request/response schemas for conversational invocation.</li>
+                                <li>Eliminated static manual pipelines by standardizing AI-to-DB communications.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: ERP Management System -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-card-header">
+                        <div class="project-icons">
+                            <i class="fa-solid fa-network-wired"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/bharanishree-codes" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Academic & Corporate ERP System</h3>
+                        <p class="project-tagline">Automating Complex Workflow Approvals</p>
+                    </div>
+                    <div class="project-card-body">
+                        <p class="project-problem"><strong>Problem Solved:</strong> Academic and admin approval workflows were manual and error-prone, slowing down processing.</p>
+                        <p class="project-desc">Designed an end-to-end FastAPI and SQLAlchemy backend that manages multi-stage approval chains, custom academic actions, and conditional validation rules.</p>
+                        <div class="project-tech">
+                            <span>FastAPI</span>
+                            <span>MySQL</span>
+                            <span>SQLAlchemy</span>
+                            <span>JWT</span>
+                            <span>RBAC</span>
+                        </div>
+                        <div class="project-achievements">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Optimized MySQL query schemas, enhancing overall index performance by 30%.</li>
+                                <li>Decreased batch data processing latency by 80% through tailored async API routines.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: TN Government Training Portal -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-card-header">
+                        <div class="project-icons">
+                            <i class="fa-solid fa-hospital-user"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/bharanishree-codes" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Public Health Training Portal</h3>
+                        <p class="project-tagline">Centralized Government Workflow Management</p>
+                    </div>
+                    <div class="project-card-body">
+                        <p class="project-problem"><strong>Problem Solved:</strong> Internship placement tracking across hundreds of health institutions faced critical coordination delays.</p>
+                        <p class="project-desc">Developed a central portal for the Tamil Nadu Public Health Department, linking external interns with placement workflows, institutions, and training validations.</p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>DRF</span>
+                            <span>PostgreSQL</span>
+                            <span>JWT</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-achievements">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Replaced manual paper routes with a rigid, multi-stage approval dashboard.</li>
+                                <li>Created audit-friendly PostgreSQL models to keep track of user and permission changes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: MIS Reporting Portal -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-card-header">
+                        <div class="project-icons">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/bharanishree-codes" target="_blank" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Multi-Tenant MIS Reporting Portal</h3>
+                        <p class="project-tagline">Academic Auditing and Metrics Engine</p>
+                    </div>
+                    <div class="project-card-body">
+                        <p class="project-problem"><strong>Problem Solved:</strong> Institutional compliance data was scattered, complicating HOD and board review audits.</p>
+                        <p class="project-desc">Built a multi-tenant Management Information System (MIS) compiling administrative metrics and generating PDF audits dynamically.</p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>FastAPI</span>
+                            <span>DRF</span>
+                            <span>PostgreSQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-achievements">
+                            <h5>Key Achievements:</h5>
+                            <ul>
+                                <li>Configured rigid tenant separation and RBAC for compliance managers and HODs.</li>
+                                <li>Built modular database-driven scheduling configurations for report compiles.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career History</span>
+                <h2 class="section-title">Experience & Education</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="timeline">
+                
+                <!-- Experience Item -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">June 2024 — May 2026</div>
+                    <div class="timeline-content card">
+                        <div class="card-header-timeline">
+                            <div>
+                                <h3 class="timeline-title">Python Developer</h3>
+                                <h4 class="timeline-company">B2E Technology</h4>
+                            </div>
+                            <span class="badge badge-work">Professional</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="company-desc">B2E Technology delivers custom ERP, governmental data engines, and administrative portals.</p>
+                            <ul class="timeline-bullets">
+                                <li>Developed and optimized RESTful APIs in FastAPI and Django, enforcing secure OAuth2/JWT tokens and complex RBAC.</li>
+                                <li>Engineered asynchronous workflows using Celery and Redis to handle batch reports and event scheduling.</li>
+                                <li>Re-architected PostgreSQL database tables and optimized query indexes to minimize database execution timeouts.</li>
+                                <li>Wrapped services in Docker containers and configured automated testing with Pytest in GitHub Actions CI/CD pipelines.</li>
+                                <li>Actively participated in daily Agile standups, sprint reviews, planning sessions, and thorough code reviews.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Item -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">June 2021 — April 2024</div>
+                    <div class="timeline-content card">
+                        <div class="card-header-timeline">
+                            <div>
+                                <h3 class="timeline-title">B.Sc. Computer Science</h3>
+                                <h4 class="timeline-company">Justice Basheer Ahmed Sayeed College for Women, Chennai</h4>
+                            </div>
+                            <span class="badge badge-edu">Education</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Completed undergraduate degree with a core focus on software structures, relational databases, OOP, and web programming.</p>
+                            <div class="education-highlights">
+                                <span><strong>CGPA:</strong> 7.2 / 10</span>
+                                <span><strong>Focus:</strong> Data Structures, DBMS, Web Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Build Something Together</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p class="contact-subtext">Have a question or looking to build a scalable backend platform? Feel free to reach out to me.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-card">
+                            <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h5>Email</h5>
+                                <a href="mailto:bharanishree2002.08@gmail.com" class="detail-link">bharanishree2002.08@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-card">
+                            <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h5>Phone</h5>
+                                <a href="tel:+917904634312" class="detail-link">+91 7904634312</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-card">
+                            <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h5>Location</h5>
+                                <span class="detail-text">Chennai, Tamil Nadu, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-circles">
+                        <a href="https://github.com/bharanishree-codes" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/bharanishree" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container card">
+                    <h3>Send Message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required placeholder="Job Opportunity / Project Collaboration">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div id="form-feedback" class="form-feedback"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Bharani Shree R. All rights reserved.</p>
+            <p class="footer-design">Designed & Built with <span class="heart">&hearts;</span> & Python-driven principles.</p>
+            <a href="#home" class="scroll-to-top" id="scroll-top-btn" aria-label="Scroll to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Core Script -->
+    <script src="script.js"></script>
+</body>
+</html>
